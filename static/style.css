@@ -1,0 +1,131 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Calibri, Arial, sans-serif; /* Changed font style */
+    background-color: #09090a;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    height: 90vh;
+    width: 90vw;
+    max-width: 1200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(9, 9, 10, 0.5);
+}
+
+/* Sidebar styling */
+.chat-sidebar {
+    width: 60px; /* Narrower sidebar */
+    background-color: #1e1e1e; /* Darker color for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px; /* Adjust padding */
+    justify-content: flex-start; /* Align items to the top */
+}
+
+/* Chat header styling */
+.chat-header {
+    background-color: #1e1e1e; /* Matches sidebar color */
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.chat-header .chat-icon {
+    width: 30px; /* Smaller icon size */
+    height: 30px;
+    margin-right: 10px; /* Space between icon and heading */
+}
+
+.chat-header h2 {
+    color: #fff;
+    font-size: 18px; /* Font size for heading */
+    margin: 0; /* No margin */
+}
+
+/* Chat container styling */
+.chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #09090a; /* Match body background */
+}
+
+/* Chat box styling */
+.chat-box {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #1e1e1e; /* Lighter background for contrast */
+    border: 1px solid #2a2a2a;
+    border-radius: 5px;
+}
+
+.chat-box div {
+    margin-bottom: 10px; /* Reduce margin between messages */
+}
+
+.user-message {
+    color: #ffffff;
+    text-align: right;
+    margin: 5px 0;
+    word-wrap: break-word; /* Ensure long messages wrap */
+}
+
+.chatbot-message {
+    color: #E9E9EB;
+    text-align: left;
+    margin: 5px 0;
+    word-wrap: break-word;
+}
+
+/* Chat input styling */
+.chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #2a2a2a;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #09090a;
+    color: #fff;
+    outline: none; /* Remove input field border on focus */
+    font-family: Calibri, Arial, sans-serif; /* Ensure font consistency */
+}
+
+.chat-input button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.send-icon {
+    width: 25px; /* Smaller send icon */
+    height: 25px;
+}
